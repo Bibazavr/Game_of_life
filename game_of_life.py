@@ -1,10 +1,11 @@
 class GameOfLive:
+  
     def __init__(self):
         self.next_stage = []
         self.row = row
         self.column = column
         self.stage = []
-
+        
     def find_live(self, stage, number_row, number_column, max_row, max_column):
         live = 0
         up = number_row + 1
@@ -72,6 +73,7 @@ class GameOfLive:
             if self.next_stage == self.stage:
                 break
             self.stage = self.next_stage
+
 
 
 
